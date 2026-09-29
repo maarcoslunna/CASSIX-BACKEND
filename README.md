@@ -35,11 +35,11 @@ Backend y servicio API REST desarrollado para dar soporte a la tienda online de 
    ```bash
    git clone [https://github.com/maarcoslunna/CASSIX-BACKEND.git](https://github.com/maarcoslunna/CASSIX-BACKEND.git)
 
-Accede al directorio:
+2.Accede al directorio:
   cd CASSIX-BACKEND 
   
-Instala las dependencias:
+3.Instala las dependencias:
 npm install
 
-Inicia el servidor:
+4.Inicia el servidor:
 node server.js
