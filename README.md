@@ -1,32 +1,45 @@
-# 🛒 CASSIX - E-commerce Full-Stack
+# Cassix Wear - Backend API 🛍️⚙️
 
-Este es mi proyecto personal para **CASSIX**, una tienda online pensada desde cero con una estética minimalista y moderna (estilo Apple), cuidando tanto el diseño visual como la lógica del servidor y la base de datos.
+Backend y servicio API REST desarrollado para dar soporte a la tienda online de moda urbana Cassix Wear. Implementa arquitectura modular para gestionar el catálogo de productos, modelos de datos y peticiones HTTP.
 
-Quería crear una aplicación web full-stack que fuera funcional de verdad, conectando una interfaz limpia con una API REST propia y una base de datos NoSQL.
+---
 
-## 🛠️ Tecnologías que he usado
+## 🛠️ Tecnologías Utilizadas
 
-* **Backend:** Node.js, Express.js
-* **Base de datos:** MongoDB Atlas (con Mongoose para los modelos)
-* **Frontend:** HTML5, CSS3 (Variables personalizadas, Grid, Flexbox) y JavaScript nativo (Fetch API, Async/Await)
-* **Estructura:** Arquitectura modular limpia separando modelos, rutas y archivos públicos.
+- **Entorno de ejecución:** Node.js
+- **Framework backend:** Express.js
+- **Base de datos:** MongoDB con modelado de datos en Mongoose
+- **Módulos:** CommonJS
+- **Control de versiones:** Git & GitHub
 
-## ✨ Características principales
+### 📂 Estructura del Proyecto
+- `server.js` — Servidor principal y configuración de la app.
+- `routes/` — Rutas y endpoints para la gestión de recursos.
+- `models/` — Esquemas y modelos de datos de Mongoose.
+- `public/` — Recursos y archivos estáticos.
 
-* **API REST completa:** Rutas estructuradas para consultar el catálogo, registrar nuevos productos, actualizar datos y eliminar artículos (CRUD completo).
-* **Control de stock en tiempo real:** Cuando un usuario hace clic en "Adquirir" desde la web, la aplicación actualiza automáticamente la base de datos restando una unidad al stock disponible.
-* **Diseño Minimalista (Modo Oscuro):** Interfaz limpia en tonos negros y blancos con detalles en rojo, animaciones fluidas y transiciones cuidadas con CSS.
+---
 
-## 📂 Estructura del proyecto
+## 🚀 Funcionalidades Principales
 
-```text
-CASSIX/
-├── models/
-│   └── prenda.js         # Esquema de Mongoose para las prendas
-├── routes/
-│   └── prendas.js        # Endpoints y lógica de la API
-├── public/
-│   └── index.html        # Interfaz visual de la tienda (Frontend)
-├── server.js             # Archivo principal que arranca el servidor y conecta MongoDB
-├── package.json          # Dependencias del proyecto
-└── README.md             # Documentación del proyecto
+- Conexión y gestión de base de datos NoSQL con MongoDB.
+- Definición de esquemas de datos estructurados con validaciones en Mongoose.
+- Enrutamiento modular para operaciones sobre productos y recursos de la tienda.
+- Middleware integrado para soporte de JSON y archivos estáticos.
+
+---
+
+## 💻 Instalación y Ejecución Local
+
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/maarcoslunna/CASSIX-BACKEND.git](https://github.com/maarcoslunna/CASSIX-BACKEND.git)
+
+Accede al directorio:
+  cd CASSIX-BACKEND 
+  
+Instala las dependencias:
+npm install
+
+Inicia el servidor:
+node server.js
